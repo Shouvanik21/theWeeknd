@@ -132,6 +132,152 @@ body::before{
       -webkit-text-fill-color: transparent;
     }
 } */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    font-size: xx-large;
+    color: red;
+ }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(var(--row), 100px);
+    margin-top: 50px;
+    gap: 50px;
+    /* font-weight: 600; */
+}
+.grid figure img{
+    width: 100%;
+    padding: 0px 40px;
+    margin: 0px auto 30px;
+}
+.grid-2{
+    /* color: whitesmoke; */
+    --row: 8;
+    font-size: 1.8em;
+}
+.grid-2 div:nth-child(1){
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
+.grid-2 div:nth-child(2){
+    grid-column: 4 / 7;
+    grid-row: 1;
+}
+.grid-2 div:nth-child(3){
+    grid-column: 4 / 7;
+    grid-row: 4;
+}
+.grid-2 div:nth-child(4){
+    grid-column: 1 / 4;
+    grid-row: 6;
+}
+.grid-3 {
+    --row: 6;
+    font-size: 12em;
+}
+.grid-3 div {
+   grid-column: 2/ 6;
+   text-wrap: nowrap;
+}
+.grid-3 div:nth-child(even) {
+   text-align: right;
+}
+  /* .grid-3 div:nth-child(5) {
+    grid-column: 1/ 6;
+  } */
+.grid-3 div:nth-child(4) {
+   grid-column: 1/ 6;
+}
+.p1{
+    color: white;
+}
+hr{
+    border: none;
+    background-color: #322D31;
+    height:1px;
+    margin-top: 5px;
+}
+footer{
+    border-top: 1px solid #2E373A55;
+    min-height: 100vh;
+}
+footer .content{
+    width: min(1400px, 100vw);
+    margin: auto;
+    padding: 100px 20px;
+}
+.grid-5{
+    --row: 5;
+    font-size:1.7em;
+}
+.grid-5 div:nth-child(1){
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+.grid-5 div:nth-child(2){
+    grid-row: 2;
+    grid-column: 3 / 5;
+}
+.grid-5 div:nth-child(3){
+    grid-row: 3;
+    grid-column: 5 / 7;
+}
+.grid-5 div:nth-child(4){
+    grid-row: 1;
+    grid-column: 5 / 7;
+}
+/* #candy {
+    width: 90%;
+    margin: 180px auto 0;
+} */
+.f2{
+    color: white;
+}
+.autoRotate {
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+  }
+  @keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        filter: blur(100px);
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoBlur{
+    animation: autoBLurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBLurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
 
 @media screen and (max-width:1080) {
     .container .slider{
