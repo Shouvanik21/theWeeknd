@@ -124,7 +124,7 @@ body::before{
     position: absolute;
     bottom: 0;
     left: 0;
-    /* top: 50; */
+    margin-bottom: 5px;
     background-size: auto 130%;
     background-repeat: no-repeat;
     background-position: top center;
