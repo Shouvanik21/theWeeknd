@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: red;
+    background-color: #EFE1CE;
     background-image:
     repeating-linear-gradient(
         to right, transparent 0 100px,
@@ -60,7 +60,7 @@ body::before{
 .container .slider .item{
     position: absolute;
     inset: 0 0 0 0;
-    transform: rotateY(calc((var(--position) - 1)*(360 / var(--quantity)) *1deg))translateZ(425px);
+    transform: rotateY(calc((var(--position) - 1)*(360 / var(--quantity)) *1deg))translateZ(400px);
 }
 
 .container .slider .item img{
@@ -116,18 +116,18 @@ body::before{
     font-size: 3em;
 }
 
-.container .content1{
-    background-image: url("./images/sky.jpg");
+.container .content1 img{
     background-size: cover;
-    width: 100%;
+    width: 70%;
     height: 72vh;
     position: absolute;
     bottom: 0;
     left: 0;
     margin-bottom: 75px;
+    margin-left: 16%;
     background-size: auto 130%;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
     z-index: 1;
 }
 .container .content .content2{
@@ -333,10 +333,10 @@ footer .content{
     height: 10px;
 }  
 ::-webkit-scrollbar-track{
-    background-color: red;
+    background-color: #EFE1CE;
 }
 ::-webkit-scrollbar-thumb {
-    background: blue;
+    background: #363945;
     border-radius: 4px;
 }
 
