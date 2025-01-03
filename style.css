@@ -53,7 +53,7 @@ body::before{
         transform: perspective(1000px) rotateX(-18deg) rotateY(0deg);
     }
     to{
-        transform: perspective(1000px) rotateX(-18deg) rotateY(225deg);
+        transform: perspective(1000px) rotateX(-18deg) rotateY(200deg);
     }
 }
 
