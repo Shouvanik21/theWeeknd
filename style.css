@@ -194,9 +194,13 @@ main{
     --row: 2;
 }
 .grid figure img{
-    width: 100%;
-    padding: 0px 40px;
-    margin: 0px auto 30px;
+    width: 80%;
+    /* padding: 0px 40px;
+    margin: 0px auto 30px; */
+}
+.bt-pic2,.bt-pic3{
+    height: 50%;
+    width: 50%;
 }
 .grid-2{
     /* color: whitesmoke; */
