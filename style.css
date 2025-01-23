@@ -16,7 +16,7 @@ body{
     );
 }
 
-body::before{
+/* body::before{
     position: absolute;
     width: min(1400px, 90vw);   
     top: 10%;
@@ -26,7 +26,7 @@ body::before{
     content: '';
     background-size: 100%;
     pointer-events: none;
-}
+} */
 
 main{
     width: min(1400px, 100vw);
