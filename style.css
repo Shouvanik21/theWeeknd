@@ -108,7 +108,7 @@ main{
     inset: 0 0 0 0;
     content: attr(data-content);
     z-index: 2;
-    -webkit-text-stroke: 2px red;
+    -webkit-text-stroke: 2px white;
     color: transparent;
 }
 
@@ -161,7 +161,7 @@ main{
     align-items: center;
     margin: 3%;
     font-size: xx-large;
-    color: red;
+    color: #f0e0e0;
  }
  .grid figure img{
     width: 100%;
@@ -173,6 +173,7 @@ main{
     grid-template-rows: repeat(var(--row), 100px);
     margin-top: 50px;
     gap: 50px;
+    color: #f0e0e0;
     /* font-weight: 600; */
 }
 .grid-1 figure:nth-child(1){
