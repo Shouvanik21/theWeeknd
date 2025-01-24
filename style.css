@@ -264,6 +264,21 @@ hr{
         transform: translateY(0) scale(1);
     }
 }
+.autoBlur{
+    animation: autoBLurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBLurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
 
 
 
