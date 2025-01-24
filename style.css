@@ -176,24 +176,24 @@ main{
     color: #f0e0e0;
     /* font-weight: 600; */
 }
-.grid-1 figure:nth-child(1){
+.grid-1 figure:nth-child(1) {
     grid-column: 2 / 6;
     grid-row: 1;
-}
-.grid-1 figure:nth-child(2){
+  }
+  .grid-1 figure:nth-child(2) {
     grid-column: 3 / 5;
     grid-row: 1;
-}
-.grid-1 h2:nth-child(3){
+  }
+  .grid-1 h2:nth-child(3) {
     font-size: 7em;
     grid-column: 1 / 7;
     text-align: center;
     grid-row: 5;
     z-index: 1;
-}
-.grid-1{
+  }
+  .grid-1 {
     --row: 2;
-}
+  }
 .grid figure img{
     width: 80%;
     padding: 0px 40px;
@@ -306,6 +306,18 @@ hr{
     }
 }
 
+.autoRotate {
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+  }
+  @keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 .autoShow{
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
