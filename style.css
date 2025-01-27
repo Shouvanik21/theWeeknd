@@ -4,7 +4,7 @@
     /* box-sizing: border-box; */
 }
 body{
-    background-color: #212121;
+    background-color: #1d1a1a;
     background-image:
     repeating-linear-gradient(
         to right, transparent 0 100px,
@@ -353,7 +353,7 @@ hr{
     height: 10px;
 }  
 ::-webkit-scrollbar-track{
-    background-color: #212121;
+    background-color: #1d1a1a;
 }
 ::-webkit-scrollbar-thumb {
     background: #f0e0e0;
